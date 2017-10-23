@@ -10,13 +10,15 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body ng-app="myApp" class="ng-scope">
-    <nav class="navbar">
-        <a href="#!">X</a>
-         <a href="#!collaborateurs">Collaborateurs</a>
-         <a href="#!statistiques">Statistiques</a>
-         <a href="#!activites">Activites</a>
+    <nav class="navbar navbar-default">
+        <ul class="nav navbar-nav">
+            <li><a href="#!">X</a></li>
+            <li><a href="#!collaborateurs">Collaborateurs</a></li>
+            <li><a href="#!statistiques">Statistiques</a></li>
+            <li><a href="#!activites">Activites</a></li>
+        </ul>
     </nav>
-    <div ng-view>
+    <div class="container" ng-view>
     </div>
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

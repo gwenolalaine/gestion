@@ -12,5 +12,11 @@ app.config(function($routeProvider) {
     })
 	.when("/activites", {
         templateUrl : "activites.html"
+    })
+    .when("/ajoutCollaborateur", {
+        templateUrl : "ajoutCollaborateur.html"
+    })
+    .when("/modifCollaborateur", {
+        templateUrl : "modificationCollaborateur.html"
     });
 });
