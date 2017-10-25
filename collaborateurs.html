@@ -14,7 +14,7 @@
         <option value="informatique">Informatique</option>
     </select>
 </p>
-<div id="tab-collaborateurs">
+<div id="tab-collaborateurs" class="row justify-content-between">
 
 </div>
 
@@ -25,8 +25,8 @@
         $('#content').load('ajoutCollaborateur.html');
     })
 for(var i = 0; i < noms.length; i++){
-    $('#tab-collaborateurs').append('<div class="row pannel panel-default col-sm-4" id="row_collab"><div class="panel-heading" id="collab">' + noms[i]+ '</div><div class="panel-body" id="collab"><div class="col-sm-4"><img src="collaborateur' + i +'.jpg" class=" img-responsive"/></div><div class="col-sm-8"><h3>Fonction</h3><h3>Departement</h3><h3>Email</h3><h3>Téléphone</h3><a  id="modifCollaborateur" class="btn btn-default col-sm-offset-8 col-sm-4">Editer</a></div></div></div>'
-    )};
+    $('#tab-collaborateurs').append('<div class="row pannel panel-default col-sm-offset-1 col-sm-3" id="row_collab"><div class="panel-heading" id="collab">' + noms[i]+ '</div><div class="panel-body" id="collab"><div class="col-sm-4"><img src="collaborateur' + i +'.jpg" class=" img-responsive"/></div><div class="col-sm-8"><h3>Fonction</h3><h3>Departement</h3><h3>Email</h3><h3>Téléphone</h3><a  id="modifCollaborateur" class="btn btn-default col-sm-offset-8 col-sm-4">Editer</a></div></div></div>');
+};
 
     $("#modifCollaborateur").click(function(){
         $('#content').load('modificationCollaborateur.html');
