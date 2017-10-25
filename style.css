@@ -13,3 +13,7 @@ form{
 .error{
     color:red;
 }
+
+#collab{
+    border:solid 1px;
+}

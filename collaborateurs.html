@@ -1,8 +1,8 @@
 <a href="#!ajoutCollaborateur" id="ajoutCollaborateur" class="btn btn-default col-sm-offset-8 col-sm-4">Ajouter un nouveau collaborateur</a>
 <h1>Les collaborateurs</h1>
    <p> Rechercher un nom ou un prénom qui commence par :
-    <input type="text" /> 
-    <input type="submit" />
+    <input type="text" id="nom"/> 
+    <input type="submit" id="chercher"/>
     <input type="checkbox"/> Voir les collaborateurs désactivés
 </p>
 <p class=".form-control-static">
@@ -14,25 +14,24 @@
         <option value="informatique">Informatique</option>
     </select>
 </p>
-<div id="tab-collaborateurs"></div>
-
+<div id="tab-collaborateurs">
 
 </div>
 
 <script>
+    var noms = ['Leslie Knope', 'Commandant Carter', 'Captain Janeway', 'Laura Roslin', 'Commander Shepard'];
+
     $("#ajoutCollaborateur").click(function(){
         $('#content').load('ajoutCollaborateur.html');
     })
-
-   
-    for(var i=0; i<10; i++){
-        $('#tab-collaborateurs').append('<div class="row pannel panel-default col-sm-4"><div class="panel-heading">Collaborateur 1</div><div class="panel-body"><div class="col-sm-2">Photo</div><div class="col-sm-10">Fonction<br/>Departement<br/>Email<br/>Téléphone<a href="#!modifCollaborateur" id="modifCollaborateur" class="btn btn-default col-sm-offset-8 col-sm-4">Editer</a></div></div></div>')
-    }
+for(var i = 0; i < noms.length; i++){
+    $('#tab-collaborateurs').append('<div class="row pannel panel-default col-sm-4" ><div class="panel-heading" id="collab">' + noms[i]+ '</div><div class="panel-body" id="collab"><div class="col-sm-4"><img src="collaborateur' + i +'.jpg" class=" img-responsive"/></div><div class="col-sm-8"><h3>Fonction</h3><h3>Departement</h3><h3>Email</h3><h3>Téléphone</h3><a  id="modifCollaborateur" class="btn btn-default col-sm-offset-8 col-sm-4">Editer</a></div></div></div>'
+    )};
 
     $("#modifCollaborateur").click(function(){
         $('#content').load('modificationCollaborateur.html');
     })
-    
+
     
     
 </script>
