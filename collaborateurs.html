@@ -1,5 +1,4 @@
-
-<a href="#!ajoutCollaborateur"  class="btn btn-default col-sm-offset-8 col-sm-4">Ajouter un nouveau collaborateur</a>
+<a href="#!ajoutCollaborateur" id="ajoutCollaborateur" class="btn btn-default col-sm-offset-8 col-sm-4">Ajouter un nouveau collaborateur</a>
 <h1>Les collaborateurs</h1>
    <p> Rechercher un nom ou un prénom qui commence par :
     <input type="text" /> 
@@ -15,9 +14,25 @@
         <option value="informatique">Informatique</option>
     </select>
 </p>
+<div id="tab-collaborateurs"></div>
 
-<div class="row" id="collaborateurs">
-    <a href="#!modifCollaborateur"><div class="col-sm-4">Collaborateur 1</div></a>
-    <div class="col-sm-4">Collaborateur 1</div>
-    <div class="col-sm-4">Collaborateur 1</div>
+
 </div>
+
+<script>
+    $("#ajoutCollaborateur").click(function(){
+        $('#content').load('ajoutCollaborateur.html');
+    })
+
+   
+    for(var i=0; i<10; i++){
+        $('#tab-collaborateurs').append('<div class="row pannel panel-default col-sm-4"><div class="panel-heading">Collaborateur 1</div><div class="panel-body"><div class="col-sm-2">Photo</div><div class="col-sm-10">Fonction<br/>Departement<br/>Email<br/>Téléphone<a href="#!modifCollaborateur" id="modifCollaborateur" class="btn btn-default col-sm-offset-8 col-sm-4">Editer</a></div></div></div>')
+    }
+
+    $("#modifCollaborateur").click(function(){
+        $('#content').load('modificationCollaborateur.html');
+    })
+    
+    
+    
+</script>

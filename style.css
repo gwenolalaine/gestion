@@ -1,3 +1,15 @@
 input{
     display:inline-block;
 }
+
+#collaborateurs{
+    text-align:center;
+}
+
+form{
+	text-align:center;
+}
+
+.error{
+    color:red;
+}

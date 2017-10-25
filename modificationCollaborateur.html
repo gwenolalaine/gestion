@@ -1,41 +1,45 @@
-<h1 id="collaborateur">NOM Prénom - Matricule</h1>
+<div id="photo" class="col-sm-4"></div>
+<div id="form" class="col-sm-8">
+<h1 class="col-sm-8" id="collaborateur">NOM Prénom - Matricule</h1>
+<div class="col-sm-4"><input type="checkbox"/> Désactiver</div>
 
 <button data-toggle="collapse" data-target="#identite" class="btn btn-block">Identité</button>
 
 <div id="identite" class="collapse">
+        <br/>
     <form class="form-horizontal">
         <div class="form-group">
-            <label class="control-label col-sm-4" for="nom">Nom :</label>
+            <label class="col-sm-4" align="left" for="nom">Nom :</label>
             <div class="col-sm-8">
                 <input type="text" class="form-control" id="nom">
             </div>
         </div>
         <div class="form-group">
-            <label for="prenom" class="control-label col-sm-4" >Prénom :</label>
+            <label for="prenom" class="col-sm-4" align="left">Prénom :</label>
             <div class="col-sm-8">
                 <input type="text" class="form-control" id="prenom">
             </div>
         </div>
         <div class="form-group">
-            <label for="date" class="control-label col-sm-4" >Date de naissance :</label>
+            <label for="date" class="col-sm-4" align="left">Date de naissance :</label>
             <div class="col-sm-8">
                 <input type="date" class="form-control" id="date">
             </div>
         </div>
         <div class="form-group">
-            <label for="Adresse" class="control-label col-sm-4" >Adresse :</label>
+            <label for="Adresse" class="col-sm-4" align="left">Adresse :</label>
             <div class="col-sm-8">
                 <input type="text" class="form-control" id="adresse">
             </div>
         </div>
         <div class="form-group">
-            <label for="numero" class="control-label col-sm-4">Numero de sécurité sociale :</label>
+            <label for="numero" class="col-sm-4" align="left">Numero de sécurité sociale :</label>
             <div class="col-sm-8">
                 <input type="text" class="form-control" id="numero">
             </div>
         </div>
         <div class="form-group">
-                <label for="telephone" class="control-label col-sm-4">Téléphone :</label>
+                <label for="telephone" class="col-sm-4"align="left">Téléphone :</label>
                 <div class="col-sm-8">
                     <input type="text" class="form-control" id="telephone">
                 </div>
@@ -46,9 +50,10 @@
 <button data-toggle="collapse" data-target="#poste" class="btn btn-block">Poste</button>
 
 <div id="poste" class="collapse">
+        <br/>
     <form class="form-horizontal">
         <div class="form-group">
-            <label class="control-label col-sm-4" for="departement">Département :</label>
+            <label class="col-sm-4" align="left" for="departement">Département :</label>
             <div class="col-sm-8">
                 <select class="form-control" id="departement">
                     <option value="44">44</option>
@@ -57,7 +62,7 @@
         </div>
        
         <div class="form-group">
-            <label for="nomPoste" class="control-label col-sm-4">Nom</label>
+            <label for="nomPoste" align="left" class="col-sm-4">Nom</label>
             <div class="col-sm-8">
                 <input type="text" class="form-control" id="nomPoste">
             </div>
@@ -68,16 +73,17 @@
 <button data-toggle="collapse" data-target="#banque" class="btn btn-block">Coordonnées bancaires</button>
 
 <div id="banque" class="collapse">
+        <br/>
     <form class="form-horizontal">
         <div class="form-group">
-            <label class="control-label col-sm-4" for="iban">IBAN :</label>
+            <label class="col-sm-4" align="left" for="iban">IBAN :</label>
             <div class="col-sm-8">
                 <input type="text" class="form-control" id="iban">
             </div>
         </div>
        
         <div class="form-group">
-            <label for="bic" class="control-label col-sm-4">BIC</label>
+            <label for="bic" align="left" class="col-sm-4">BIC</label>
             <div class="col-sm-8">
                 <input type="text" class="form-control" id="bic">
             </div>
@@ -85,8 +91,7 @@
     </form>
 </div>
 
-
-
-<div class="col-sm-offset-11 col-sm-1">
-        <button type="submit" class="btn btn-default">Créer</button>
+<div class="col-sm-offset-10 col-sm-2">
+        <button type="submit" class="btn btn-default">Sauvegarder</button>
     </div>
+</div>
